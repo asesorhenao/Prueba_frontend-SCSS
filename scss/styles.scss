@@ -1,0 +1,162 @@
+@import 'vars';
+@import 'format';
+
+.maxwell {
+    &-header {
+        @include sizes(100vw, auto);
+        padding: 15px;
+        background-color: $maxwell-pigment-indigo;
+        box-shadow: 0px 3px 6px $maxwell-black;
+    }
+    &-logo {
+        margin-bottom: 10px;
+    }
+    &-headerContent {
+        @include sizes(calc(100vw - 30px), auto);
+        @include flexbox(flex, center, space-between)
+    }
+    &-nav {
+        @include flexbox(flex, center, flex-start);
+        list-style: none;
+    }
+    &-navItemsLink {
+        margin-right: 10px;
+        @include flexbox(flex, center, flex-start);
+        position: relative;
+        color: $maxwell-white;
+        text-decoration: none;
+        &--active {
+            color: $maxwell-selective-yellow;
+            &::after {
+                content: '';
+                @include sizes(100%, 2px);
+                position: absolute;
+                bottom: -29px;
+                left: 0;
+                background-color: $maxwell-selective-yellow;
+            }
+        }
+    }
+    &-navItemsImg {
+        margin-right: 5px;
+    }
+    &-loginContent {
+        @include flexbox(flex, center, flex-start);
+    }
+    &-loginExit {
+        margin-right: 15px;
+    }
+    &-loginAvatar {
+        margin: 0;
+    }
+    &-navbar {
+        @include sizes(100vw, auto);
+        padding: 43px 15px;
+        list-style: none;
+        background-color: $maxwell-tolopea;
+    }
+    &-navbarItems {
+        margin-bottom: 16px;
+    }
+    &-navbarItemsLink {
+        color: $maxwell-white;
+        text-decoration: none;
+        &--active {
+            font-weight: bold;
+        }
+    }
+    &-content {
+        @include sizes(100vw, auto);
+        padding: 43px 15px;
+        background-color: $maxwell-ripe-plum;
+        & h1 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+    }
+    &-containerIcons {
+        @include flexbox(flex, flex-start, flex-start);
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    &-itemsIcons {
+        margin-right: 34px;
+        margin-bottom: 50px;
+    }
+    &-linksIcons {
+        @include sizes(82px, auto);
+        display: block;
+        color: $maxwell-white;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    &-icon {
+        @include sizes(82px, 82px);
+        @include flexbox(flex, center, center);
+        margin-bottom: 10px;
+        background-color: $maxwell-white;
+        border-radius: 7px;
+        &--active {
+            background-color: $maxwell-selective-yellow;
+        }
+    }
+    @media only screen and (min-width: $maxwell-tablet) {
+        &-header {
+            @include sizes(100vw, 60px);
+            padding: 0;
+            @include flexbox(flex, center, flex-start);
+        }
+        &-logo {
+            @include sizes(145px, auto);
+            margin-bottom: 0;
+            @include flexbox(flex, center, center);
+        }
+        &-headerContent {
+            width: calc(100vw - 145px);
+        }
+        &-nav {
+            padding-left: 40px;
+        }
+        &-navItemsLink {
+            margin-right: 40px;
+            &--active {
+                &::after {
+                    bottom: -19px;  
+                }
+            }
+            &:hover {
+                color: $maxwell-selective-yellow;
+            }
+        }
+        &-loginExit {
+            margin-right: 0;
+        }
+        &-loginAvatar {
+            margin: 0 25px;
+        }
+        &-container {
+            @include flexbox(flex, flex-start, flex-start);
+        }
+        &-navbar {
+            @include sizes(145px, calc(100vh - 60px));
+            padding: 43px 0 0 15px;
+        }
+        &-content {
+            @include sizes(calc(100vw - 145px), calc(100vh - 60px));
+            padding: 43px 0 0 40px;
+        }
+        &-itemsIcons {
+            margin-bottom: 80px;
+        }
+        &-icon {
+            &:hover {
+                background-color: $maxwell-selective-yellow ;
+            }
+        }
+    }
+    @media only screen and (min-width: $maxwell-desktop) {
+        &-containerIcons {
+            @include sizes(600px, auto);
+        }
+    }
+}
