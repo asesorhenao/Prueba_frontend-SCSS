@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'robotoregular';
+  font-size: 16px;
+  color: #FFFFFF; }
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url("../assets/fonts/Roboto-Regular-webfont.eot");
+  src: url("../assets/fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Roboto-Regular-webfont.woff2") format("woff2"), url("../assets/fonts/Roboto-Regular-webfont.woff") format("woff"), url("../assets/fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../assets/fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.maxwell-header {
+  width: 100vw;
+  height: auto;
+  padding: 15px;
+  background-color: #4A0089;
+  box-shadow: 0px 3px 6px #000000; }
+.maxwell-logo {
+  margin-bottom: 10px; }
+.maxwell-headerContent {
+  width: calc(100vw - 30px);
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+.maxwell-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none; }
+.maxwell-navItemsLink {
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  color: #FFFFFF;
+  text-decoration: none; }
+  .maxwell-navItemsLink--active {
+    color: #F4BB00; }
+    .maxwell-navItemsLink--active::after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      bottom: -29px;
+      left: 0;
+      background-color: #F4BB00; }
+.maxwell-navItemsImg {
+  margin-right: 5px; }
+.maxwell-loginContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+.maxwell-loginExit {
+  margin-right: 15px; }
+.maxwell-loginAvatar {
+  margin: 0; }
+.maxwell-navbar {
+  width: 100vw;
+  height: auto;
+  padding: 43px 15px;
+  list-style: none;
+  background-color: #240043; }
+.maxwell-navbarItems {
+  margin-bottom: 16px; }
+.maxwell-navbarItemsLink {
+  color: #FFFFFF;
+  text-decoration: none; }
+  .maxwell-navbarItemsLink--active {
+    font-weight: bold; }
+.maxwell-content {
+  width: 100vw;
+  height: auto;
+  padding: 43px 15px;
+  background-color: #33005F; }
+  .maxwell-content h1 {
+    font-size: 32px;
+    margin-bottom: 40px; }
+.maxwell-containerIcons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  list-style: none; }
+.maxwell-itemsIcons {
+  margin-right: 34px;
+  margin-bottom: 50px; }
+.maxwell-linksIcons {
+  width: 82px;
+  height: auto;
+  display: block;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 13px; }
+.maxwell-icon {
+  width: 82px;
+  height: 82px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #FFFFFF;
+  border-radius: 7px; }
+  .maxwell-icon--active {
+    background-color: #F4BB00; }
+@media only screen and (min-width: 768px) {
+  .maxwell-header {
+    width: 100vw;
+    height: 60px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+  .maxwell-logo {
+    width: 145px;
+    height: auto;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .maxwell-headerContent {
+    width: calc(100vw - 145px); }
+  .maxwell-nav {
+    padding-left: 40px; }
+  .maxwell-navItemsLink {
+    margin-right: 40px; }
+    .maxwell-navItemsLink--active::after {
+      bottom: -19px; }
+    .maxwell-navItemsLink:hover {
+      color: #F4BB00; }
+  .maxwell-loginExit {
+    margin-right: 0; }
+  .maxwell-loginAvatar {
+    margin: 0 25px; }
+  .maxwell-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; }
+  .maxwell-navbar {
+    width: 145px;
+    height: calc(100vh - 60px);
+    padding: 43px 0 0 15px; }
+  .maxwell-content {
+    width: calc(100vw - 145px);
+    height: calc(100vh - 60px);
+    padding: 43px 0 0 40px; }
+  .maxwell-itemsIcons {
+    margin-bottom: 80px; }
+  .maxwell-icon:hover {
+    background-color: #F4BB00; } }
+@media only screen and (min-width: 1024px) {
+  .maxwell-containerIcons {
+    width: 600px;
+    height: auto; } }
+
+/*# sourceMappingURL=styles.css.map */
