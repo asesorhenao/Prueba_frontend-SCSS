@@ -68,6 +68,7 @@ body {
 .maxwell-navbar {
   width: 100vw;
   height: auto;
+  position: relative;
   padding: 43px 15px;
   list-style: none;
   background-color: #240043; }
@@ -78,6 +79,8 @@ body {
   text-decoration: none; }
   .maxwell-navbarItemsLink--active {
     font-weight: bold; }
+.maxwell-navbarButtonLink {
+  display: none; }
 .maxwell-content {
   width: 100vw;
   height: auto;
@@ -150,6 +153,20 @@ body {
     width: 145px;
     height: calc(100vh - 60px);
     padding: 43px 0 0 15px; }
+  .maxwell-navbarButtonLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17px;
+    height: 54px;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    background-color: #240043; }
+  .maxwell-navbarButton {
+    width: 4px;
+    height: 36px;
+    background-color: #33005F; }
   .maxwell-content {
     width: calc(100vw - 145px);
     height: calc(100vh - 60px);

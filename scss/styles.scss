@@ -51,6 +51,7 @@
     }
     &-navbar {
         @include sizes(100vw, auto);
+        position: relative;
         padding: 43px 15px;
         list-style: none;
         background-color: $maxwell-tolopea;
@@ -64,6 +65,9 @@
         &--active {
             font-weight: bold;
         }
+    }
+    &-navbarButtonLink {
+        display: none;
     }
     &-content {
         @include sizes(100vw, auto);
@@ -140,6 +144,18 @@
         &-navbar {
             @include sizes(145px, calc(100vh - 60px));
             padding: 43px 0 0 15px;
+        }
+        &-navbarButtonLink {
+            @include flexbox(flex, center, center);
+            @include sizes(17px, 54px);
+            position: absolute;
+            top: 50%;
+            right: -10px;
+            background-color: $maxwell-tolopea;
+        }
+        &-navbarButton {
+            @include sizes(4px, 36px);
+            background-color: $maxwell-ripe-plum;
         }
         &-content {
             @include sizes(calc(100vw - 145px), calc(100vh - 60px));
