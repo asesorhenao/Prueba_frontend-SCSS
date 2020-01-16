@@ -51,6 +51,7 @@
         margin: 0;
         display: block;
         border: 2px solid $maxwell-selective-yellow;
+        border-radius: 50%;
     }
     &-navbar {
         @include sizes(100vw, auto);
