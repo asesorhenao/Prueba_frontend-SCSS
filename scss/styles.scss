@@ -47,7 +47,10 @@
         margin-right: 15px;
     }
     &-loginAvatar {
+        @include sizes(46px, 46px);
         margin: 0;
+        display: block;
+        border: 2px solid $maxwell-selective-yellow;
     }
     &-navbar {
         @include sizes(100vw, auto);
