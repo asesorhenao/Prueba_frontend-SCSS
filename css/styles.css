@@ -64,7 +64,12 @@ body {
 .maxwell-loginExit {
   margin-right: 15px; }
 .maxwell-loginAvatar {
-  margin: 0; }
+  width: 46px;
+  height: 46px;
+  display: block;
+  margin: 0;
+  border: 2px solid #F4BB00;
+  border-radius: 50%;}
 .maxwell-navbar {
   width: 100vw;
   height: auto;
